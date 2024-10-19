@@ -17,7 +17,6 @@ public class Categoria {
     private Long idCategoria;
 
     private String descripcion;
-
     private Boolean estado;
 
     public Long getIdCategoria() {

@@ -26,7 +26,6 @@ public class Compra {
     private Character medioPago;
 
     private String comentario;
-
     private Character estado;
 
     public Long getIdCompra() {
