@@ -15,7 +15,7 @@ public class Compra {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_compra")
-    private Integer idCompra;
+    private Long idCompra;
 
     @Column(name = "id_cliente")
     private String idCliente;
@@ -29,11 +29,11 @@ public class Compra {
 
     private Character estado;
 
-    public Integer getIdCompra() {
+    public Long getIdCompra() {
         return idCompra;
     }
 
-    public void setIdCompra(Integer idCompra) {
+    public void setIdCompra(Long idCompra) {
         this.idCompra = idCompra;
     }
 

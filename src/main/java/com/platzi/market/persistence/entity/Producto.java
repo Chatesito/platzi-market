@@ -14,12 +14,12 @@ public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_producto")
-    private Integer idProducto;
+    private Long idProducto;
 
     private String nombre;
 
     @Column(name = "id_categoria")
-    private Integer idCategoria;
+    private Long idCategoria;
 
     @Column(name = "codigo_barras")
     private String codigoBarras;
@@ -32,36 +32,28 @@ public class Producto {
 
     private Boolean estado;
 
-    public Integer getIdProducto() {
+    public Long getIdProducto() {
         return idProducto;
     }
 
-    public void setIdProducto(Integer idProducto) {
+    public void setIdProducto(Long idProducto) {
         this.idProducto = idProducto;
     }
 
-    public Boolean getEstado() {
-        return estado;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setEstado(Boolean estado) {
-        this.estado = estado;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public Integer getCantidadStock() {
-        return cantidadStock;
+    public Long getIdCategoria() {
+        return idCategoria;
     }
 
-    public void setCantidadStock(Integer cantidadStock) {
-        this.cantidadStock = cantidadStock;
-    }
-
-    public Double getPrecioVenta() {
-        return precioVenta;
-    }
-
-    public void setPrecioVenta(Double precioVenta) {
-        this.precioVenta = precioVenta;
+    public void setIdCategoria(Long idCategoria) {
+        this.idCategoria = idCategoria;
     }
 
     public String getCodigoBarras() {
@@ -72,19 +64,27 @@ public class Producto {
         this.codigoBarras = codigoBarras;
     }
 
-    public Integer getIdCategoria() {
-        return idCategoria;
+    public Double getPrecioVenta() {
+        return precioVenta;
     }
 
-    public void setIdCategoria(Integer idCategoria) {
-        this.idCategoria = idCategoria;
+    public void setPrecioVenta(Double precioVenta) {
+        this.precioVenta = precioVenta;
     }
 
-    public String getNombre() {
-        return nombre;
+    public Integer getCantidadStock() {
+        return cantidadStock;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setCantidadStock(Integer cantidadStock) {
+        this.cantidadStock = cantidadStock;
+    }
+
+    public Boolean getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Boolean estado) {
+        this.estado = estado;
     }
 }
