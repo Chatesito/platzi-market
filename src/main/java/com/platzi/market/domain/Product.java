@@ -1,0 +1,67 @@
+package com.platzi.market.domain;
+
+public class Product {
+    private long prodoctuId;
+    private String name;
+    private long categoryId;
+    private double price;
+    private int stock;
+    private boolean active;
+    private Category category;
+
+    public long getProdoctuId() {
+        return prodoctuId;
+    }
+
+    public void setProdoctuId(long prodoctuId) {
+        this.prodoctuId = prodoctuId;
+    }
+
+    public long getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(long categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+}
